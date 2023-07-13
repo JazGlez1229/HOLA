@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>TORTAS JAZ</title>
+</head>
+<body onload="calcular()" class="text-center">
+
+    <body onload="calcular()" class="text-center">
+
+    <img src="tortas.jpg" alt="">
+    
+    <h1 class="bg-dark text-white">TORTAS JAZ</h1>
+    <div class="card m-5">
+    <h1 class=" bg-danger text-white">MENÚ</h1>
+    <class="form-control name="producto" onchange="calcular()" id="producto">
+        <h3>NORMAL $35</h3>
+            <label><input type="checkbox" id="sa"  onchange="calcular()">SALCHICHA </label><br>
+            <label><input type="checkbox" id="ja"  onchange="calcular()">JAMON</label><br>
+            <label><input type="checkbox" id="ch"  onchange="calcular()">CHULETA</label><br>
+            <label><input type="checkbox" id="hu"  onchange="calcular()">HUEVO</label><br>
+        <h3>COMBINADAS $45</h3>
+         <label><input type="checkbox" id="ve"  onchange="calcular()">VERONICA</label><br>
+         <label><input type="checkbox" id="pa"  onchange="calcular()">PACHAQUEÑA</label><br>
+         <label><input type="checkbox" id="te"  onchange="calcular()">TEXANA</label><br>
+         <label><input type="checkbox" id="to"  onchange="calcular()">TOLUQUEÑA</label><br>
+        <h3>ESPECIAL $60</h3>
+         <label><input type="checkbox" id="cu"  onchange="calcular()">CUBANA</label><br>
+        </select>
+        
+    
+   
+    <div class="bg-dark text-white" id="extra">BEBIDA</div>
+    <h3>REFRESCOS $35</h3>
+    <div class="m-2 ">
+    <input type="checkbox" name="r" id="re" class="form-check-input p-2 " onchange="calcular()" >Refresco
+
+    
+    <div class="bg-success text-white">SERVICIO</div>
+    <h3>SERVICIO A DOMICILIO $60</h3>
+        <div class="m-2">
+            <div class="m-2 ">
+                <input type="checkbox" name="m" id="sd" class="form-check-input p-2 " onchange="calcular()" >SERVICIO A DOMICILIO 
+                
+                
+            </div>
+    </div>
+    <div class="bg-dark text-white h1 "id="total">Precio: $ 0.00 MXN</div>
+    
+   </div>
+    <script src="bootstrap.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
